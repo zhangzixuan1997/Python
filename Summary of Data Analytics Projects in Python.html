@@ -1,0 +1,497 @@
+<!DOCTYPE html><html>
+
+<head>
+<meta charset="utf-8">
+<title>Summary of Data Analytics Projects in Python</title>
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 20px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;word-wrap: break-word; word-break: break-all;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+img{max-width: 100%;}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 26px;
+}
+h2 {
+    font-size: 22px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word; background-color: #F5F2F0;
+}
+pre code {
+    background-color: #F5F2F0;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+figcaption{text-align:center;}
+
+/* PrismJS 1.14.0
+https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript */
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+    color: black;
+    background: none;
+    text-shadow: 0 1px white;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+    text-shadow: none;
+    background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+    text-shadow: none;
+    background: #b3d4fc;
+}
+
+@media print {
+    code[class*="language-"],
+    pre[class*="language-"] {
+        text-shadow: none;
+    }
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+    padding: 1em;
+    margin: .5em 0;
+    overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+    background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+    padding: .1em;
+    border-radius: .3em;
+    white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: slategray;
+}
+
+.token.punctuation {
+    color: #999;
+}
+
+.namespace {
+    opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+    color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+    color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+    color: #9a6e3a;
+    background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+    color: #07a;
+}
+
+.token.function,
+.token.class-name {
+    color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+    color: #e90;
+}
+
+.token.important,
+.token.bold {
+    font-weight: bold;
+}
+.token.italic {
+    font-style: italic;
+}
+
+.token.entity {
+    cursor: help;
+}
+
+
+pre[class*="language-"].line-numbers {
+    position: relative;
+    padding-left: 3.8em;
+    counter-reset: linenumber;
+}
+
+pre[class*="language-"].line-numbers > code {
+    position: relative;
+    white-space: inherit;
+}
+
+.line-numbers .line-numbers-rows {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    font-size: 100%;
+    left: -3.8em;
+    width: 3em; /* works for line-numbers below 1000 lines */
+    letter-spacing: -1px;
+    border-right: 1px solid #999;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+    .line-numbers-rows > span {
+        pointer-events: none;
+        display: block;
+        counter-increment: linenumber;
+    }
+
+        .line-numbers-rows > span:before {
+            content: counter(linenumber);
+            color: #999;
+            display: block;
+            padding-right: 0.8em;
+            text-align: right;
+        }
+
+
+
+</style>
+
+<style> @media print{ code[class*="language-"],pre[class*="language-"]{overflow: visible; word-wrap: break-word !important;} }</style></head><body><div id="markdown-body-wrap" class="markdown-body">
+<h1 id="toc_0">Summary of Data Analytics Projects in Python</h1>
+
+<h1 id="toc_1">Sean Zhang</h1>
+
+<p>In this summary, <strong>only pure python projects are mentioned</strong>. Data preprocessing and Data Manipulation for other tools such as Tableau, Power BI, and Excel, are not included.</p>
+
+<h2 id="toc_2">Exploratory Data Analysis (EDA) &amp; Data Visualization Projects</h2>
+
+<p><strong>Small Projects:</strong></p>
+
+<table>
+<thead>
+<tr>
+<th><strong>Project Name</strong></th>
+<th><strong>Project Notes</strong></th>
+<th><strong>Tools</strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="https://www.kaggle.com/seanzhang1997/ba-da-or-ds-plotly-tells-you">Data Science related positions Analysis</a></td>
+<td>Data cleaning, Data visualization (interactive plot)</td>
+<td>Pandas, NumPy, Plotly, Matplotlib, Seaborn.</td>
+</tr>
+<tr>
+<td><a href="https://www.kaggle.com/seanzhang1997/plotly-interactive-visual-define-a-good-job">Data Science Jobs visualization and word cloud</a></td>
+<td>Data cleaning, Data visualization (interactive plot)</td>
+<td>Pandas, NumPy, Plotly, Matplotlib, Seaborn, NLTK.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/zhangzixuan1997/Python/blob/master/small%20projects%20_%20data/Airbnb%20Dataset%20Analytics.ipynb">Airbnb Dataset</a></td>
+<td>Data Merging and Cleaning</td>
+<td>Python PandasSQL.</td>
+</tr>
+<tr>
+<td><a href="https://www.kaggle.com/seanzhang1997/windows-store-eda-and-visualization">Windows Store EDA and Visualization</a></td>
+<td>EAD and Visualization</td>
+<td>Pandas, Matplotlib, Seaborn</td>
+</tr>
+</tbody>
+</table>
+
+<p>1.</p>
+
+<h2 id="toc_3">Machine Learning &amp; Deep Learning Projects</h2>
+
+<h3 id="toc_4"><strong>Big Projects:</strong></h3>
+
+<ol>
+<li><p><a href="https://github.com/zhangzixuan1997/Python/tree/master/Humana%20Case%20Competition"><strong>Humana Health Care Case Competition</strong></a> <br/>
+Manipulated professional health care domain large datasets (more than 800 features). Applied data cleaning, visualization, feature engineering (feature transformation, feature selection with Random Forest, clustering with T-SNE and PCA, data sampling technique), machine learning modeling (Logistic Regression, Random Forest, SVM, XGBoost, Ensemble Method, Sequential Neural Network). Drafted data analytics report.</p></li>
+<li><p><a href="https://github.com/zhangzixuan1997/Python/tree/master/Kaggle%20Competition%20House%20of%20Blocks"><strong>Kaggle Competition</strong></a> <strong>Houses of Blocks Falling Prediction</strong>.<br/>
+I can only share the basic code because the competition is still on going. Applied Convolutional Neural Network (CNN) model on over 14GB and 50k images to predict block structures&#39; stability. Built generator for image pre-processing (brightness and sharpening) and applied Transfer learning with EfficientNet, ResNet101, and Xception. The model reached 0.002 loss with hyperparameter tuning. The model can be extended to practical object stability assessment.</p></li>
+<li><p><a href="https://github.com/zhangzixuan1997/Python/tree/master/Veganism"><strong>Veganism Industry Research and Text Classification</strong></a> <br/>
+Dealt with a large dataset containing vegetarian restaurants data across the country. Performed data cleaning, feature engineering and data visualization. Performed text cleaning and text classification on menu text.</p></li>
+</ol>
+
+<h3 id="toc_5"><strong>Small Projects:</strong></h3>
+
+<table>
+<thead>
+<tr>
+<th><strong>Project Name</strong></th>
+<th><strong>Project Notes</strong></th>
+<th><strong>Tools</strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="https://www.kaggle.com/seanzhang1997/topic-modeling-lda-which-topic-has-more-claps">Topic Modelling with LDA detecting Medium Articles&#39; Topics</a> <img width=250/></td>
+<td>EAD and Visualization, Text Cleaning, Topic Modeling (LDA Analysis).</td>
+<td>Pandas, NumPy, NLTK, LDA.</td>
+</tr>
+<tr>
+<td><a href="https://www.kaggle.com/seanzhang1997/99-3-data-endogenous-led-to-result-word2vec-nn">Fake News Detection</a></td>
+<td>EDA, Visualization, Text Cleaning, Text Data Feature Engineering with Tokenization and Vectorization(w2v), Simple Neural Network</td>
+<td>Pandas, NumPy, NLTK, Word2Vec, Keras.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/zhangzixuan1997/Python/blob/master/hotel%20review%20text%20mining.ipynb">Hotel Review Text Mining</a></td>
+<td>Text Data Cleaning, Text data tokenization and lemmatization, Lexicon Unsupervised Learning, Feature Engineering with TF-IDF, SVM and Random Forest for text mining, Topic Modeling, Confusion Matrix study and threshold analysis.</td>
+<td>Sklearn, NLTK, Pandas, NumPy.</td>
+</tr>
+<tr>
+<td><a href="https://www.kaggle.com/seanzhang1997/logistic-svc-rfc-neural-network-nn-is-the-best">Health Care–Heart Attack Possibility</a></td>
+<td>EDA, Visualization, ML with Logistic Regression, SVM, Random Forest and Neural Network.</td>
+<td>Pandas, NumPy, Matplotlib, Sklearn.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/zhangzixuan1997/Python/blob/master/Student_Performace-A%20simple%20deep%20learning%20early%20stopping%20example.ipynb">Student Performance</a></td>
+<td>Neural Network Sequential Model with KFold.</td>
+<td>SciPy, TensorFlow, Keras, NumPy, Pandas.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/zhangzixuan1997/Python/blob/master/MINIST_CNN.ipynb">MINIST Dataset</a></td>
+<td>Neural Network CNN Model with Classic image classification problem.</td>
+<td>TensorFlow, Keras.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/zhangzixuan1997/Python/blob/master/Multiclassification.ipynb">Housing Dataset Multiclassification with Deep Learning</a></td>
+<td>Neural Network Sequential Model with Housing Dataset. AUC and ROC for measurement</td>
+<td>TensorFlow,Matplotlib,Keras.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/zhangzixuan1997/Python/tree/master/GCP">Google Cloud Platform Python ML</a></td>
+<td>GCP course project with TensorFlow and Keras.</td>
+<td>TensorFlow,Keras,GCP.</td>
+</tr>
+<tr>
+<td><a href="https://seanzhang19971026.medium.com/h2o-automl-in-python-comprehensive-tutorial-f25001c11b80">H2O AutoML</a></td>
+<td>AutoML with H2O. Apply multi-ML models on classic Titanic dataset.</td>
+<td>AutoML, H2O.</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="toc_6">Python Programming and Prescriptive Analytics Projects</h2>
+
+<h3 id="toc_7"><strong>Big Projects</strong></h3>
+
+<ol>
+<li><strong>Customer Data Crawler and Prescriptive Analytics with SciPy package.</strong> For work reason, the code cannot be shared. During my work at 3Trees, I scraped customer data with BeautifulSoup, urllib, re, xlwt and MySQL; launched data analytics program over store-level data and applied SCAN-PRO model with regression. I utilized Python SciPy and Pandas packages for ROMI sensitivity analysis and operational research to maximum cost reduction.</li>
+<li><strong>Python data manipulation and Prescriptive Analytics.</strong> For work reason, the code cannot be shared. During my work at BCG, I was responsible for importing, exporting, manipulating data (data cleaning and basic visualization) with Python. Further Excel data were generated by Python for consulting purposes.</li>
+<li><a href="https://github.com/zhangzixuan1997/Crawler_with_Python"><strong>Python Scraping Movie Data.</strong></a> Scraped data from Douban with BeautifulSoup, urllib, re, xlwt and sqlite3. Procedure: build get data functions with RegEx, get the URL by manipulating log in information for anti-crawler, and build save data function to export the data to SQLite database and Excel.</li>
+</ol>
+
+<h3 id="toc_8"><a href="https://github.com/zhangzixuan1997/Python/tree/master/Prescriptive%20Analytics"><strong>Small Projects</strong></a> - Operational Research</h3>
+
+<h2 id="toc_9">Other Projects related with Data Analytics</h2>
+
+<h3 id="toc_10"><strong>Medium Author</strong></h3>
+
+<ol>
+<li><a href="https://seanzhang19971026.medium.com/vegetarian-vegan-restaurants-data-analysis-with-python-bc12623f657a"><u>Vegetarian/Vegan Restaurants Data Analysis with Python</u></a></li>
+<li><a href="https://seanzhang19971026.medium.com/boosting-technology-for-machine-learning-adaboost-add021b997bc"><u>AdaBoost Algorithm</u></a></li>
+<li><a href="https://seanzhang19971026.medium.com/boosting-techniques-for-machine-learning-gradient-boosting-for-regression-and-classification-283c5d13853f"><u>Gradient Boosting Algorithm</u></a></li>
+<li><a href="https://seanzhang19971026.medium.com/boosting-techniques-for-machine-learning-xgboost-for-regression-and-classification-507376eedd6f"><u>XGBoost Algorithm</u></a></li>
+<li><a href="https://seanzhang19971026.medium.com/boosting-techniques-for-machine-learning-xgboost-optimization-and-hyperparameter-tuning-38b18861d02"><u>XGBoost Optimization and Hyperparameter Tuning</u></a></li>
+<li><a href="https://seanzhang19971026.medium.com/practical-applications-of-machine-learning-models-when-and-where-to-use-which-model-6477dfb1c384"><u>Practical Applications of ML Models</u></a></li>
+<li><a href="https://seanzhang19971026.medium.com/h2o-automl-in-python-comprehensive-tutorial-f25001c11b80"><u>H2O AutoML in Python Comprehensive Tutorial</u></a></li>
+<li><a href="https://seanzhang19971026.medium.com/advanced-sql-222e32a7fa37"><u>Advanced SQL–Function, Procedure, Trigger, CTE and Recursive CTE</u></a></li>
+</ol>
+
+<h3 id="toc_11"><strong>LeetCode</strong></h3>
+
+<p><a href="https://leetcode.com/zhangsean1997/"><strong>LeetCode</strong></a>–Database Questions 78/136 completed (on going).</p>
+
+</div></body>
+
+</html>
