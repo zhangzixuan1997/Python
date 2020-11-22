@@ -12,7 +12,7 @@ In this summary, **only pure python projects are mentioned**. Data preprocessing
 | --- | --- | --- |
 | [Data Science related positions Analysis](https://www.kaggle.com/seanzhang1997/ba-da-or-ds-plotly-tells-you) | Data cleaning, Data visualization (interactive plot) | Pandas, NumPy, Plotly, Matplotlib, Seaborn. |
 | [Data Science Jobs visualization and word cloud](https://www.kaggle.com/seanzhang1997/plotly-interactive-visual-define-a-good-job) |Data cleaning, Data visualization (interactive plot) | Pandas, NumPy, Plotly, Matplotlib, Seaborn, NLTK. |
-| [Airbnb Dataset](https://github.com/zhangzixuan1997/Python/blob/master/small%20projects%20_%20data/Airbnb%20Dataset%20Analytics.ipynb) | Data Merging and Cleaning|Python PandasSQL.| Pandas, NumPy, PandasSQL, Matplotlib, Seaborn |
+| [Airbnb Dataset](https://github.com/zhangzixuan1997/Python/blob/master/small%20projects/Airbnb%20Dataset%20Analytics.ipynb) | Data Merging and Cleaning|Python PandasSQL.| Pandas, NumPy, PandasSQL, Matplotlib, Seaborn |
 | [Windows Store EDA and Visualization](https://www.kaggle.com/seanzhang1997/windows-store-eda-and-visualization) | EAD and Visualization | Pandas, Matplotlib, Seaborn |
 
 1.
@@ -35,11 +35,11 @@ Dealt with a large dataset containing vegetarian restaurants data across the cou
 | --- | --- | --- |
 | [Topic Modelling with LDA detecting Medium Articles&#39; Topics](https://www.kaggle.com/seanzhang1997/topic-modeling-lda-which-topic-has-more-claps) <img width=250/>| EAD and Visualization, Text Cleaning, Topic Modeling (LDA Analysis). | Pandas, NumPy, NLTK, LDA. |
 | [Fake News Detection](https://www.kaggle.com/seanzhang1997/99-3-data-endogenous-led-to-result-word2vec-nn) | EDA, Visualization, Text Cleaning, Text Data Feature Engineering with Tokenization and Vectorization(w2v), Simple Neural Network | Pandas, NumPy, NLTK, Word2Vec, Keras. |
-| [Hotel Review Text Mining](https://github.com/zhangzixuan1997/Python/blob/master/hotel%20review%20text%20mining.ipynb) |Text Data Cleaning, Text data tokenization and lemmatization, Lexicon Unsupervised Learning, Feature Engineering with TF-IDF, SVM and Random Forest for text mining, Topic Modeling, Confusion Matrix study and threshold analysis.| Sklearn, NLTK, Pandas, NumPy.|
+| [Hotel Review Text Mining](https://github.com/zhangzixuan1997/Python/blob/master/small%20projects/hotel%20review%20text%20mining.ipynb) |Text Data Cleaning, Text data tokenization and lemmatization, Lexicon Unsupervised Learning, Feature Engineering with TF-IDF, SVM and Random Forest for text mining, Topic Modeling, Confusion Matrix study and threshold analysis.| Sklearn, NLTK, Pandas, NumPy.|
 | [Health Care–Heart Attack Possibility](https://www.kaggle.com/seanzhang1997/logistic-svc-rfc-neural-network-nn-is-the-best) | EDA, Visualization, ML with Logistic Regression, SVM, Random Forest and Neural Network. | Pandas, NumPy, Matplotlib, Sklearn. |
-| [Student Performance](https://github.com/zhangzixuan1997/Python/blob/master/Student_Performace-A%20simple%20deep%20learning%20early%20stopping%20example.ipynb) | Neural Network Sequential Model with KFold. | SciPy, TensorFlow, Keras, NumPy, Pandas. |
+| [Student Performance](https://github.com/zhangzixuan1997/Python/blob/master/small%20projects/Student_Performace-A%20simple%20deep%20learning%20early%20stopping%20example.ipynb) | Neural Network Sequential Model with KFold. | SciPy, TensorFlow, Keras, NumPy, Pandas. |
 | [MINIST Dataset](https://github.com/zhangzixuan1997/Python/blob/master/MINIST_CNN.ipynb) | Neural Network CNN Model with Classic image classification problem. | TensorFlow, Keras. |
-| [Housing Dataset Multiclassification with Deep Learning](https://github.com/zhangzixuan1997/Python/blob/master/Multiclassification.ipynb) | Neural Network Sequential Model with Housing Dataset. AUC and ROC for measurement | TensorFlow,Matplotlib,Keras. |
+| [Housing Dataset Multiclassification with Deep Learning](https://github.com/zhangzixuan1997/Python/blob/master/small%20projects/Multiclassification.ipynb) | Neural Network Sequential Model with Housing Dataset. AUC and ROC for measurement | TensorFlow,Matplotlib,Keras. |
 | [Google Cloud Platform Python ML](https://github.com/zhangzixuan1997/Python/tree/master/GCP) | GCP course project with TensorFlow and Keras. | TensorFlow,Keras,GCP. |
 | [H2O AutoML](https://seanzhang19971026.medium.com/h2o-automl-in-python-comprehensive-tutorial-f25001c11b80) | AutoML with H2O. Apply multi-ML models on classic Titanic dataset. | AutoML, H2O. |
 
